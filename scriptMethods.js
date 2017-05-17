@@ -33,4 +33,34 @@ console.log('you say ${yousay}, I say ${isay}');
   console.log(car.get("brand")); // retorna Volkswagen
   console.log(car.has("brand")); // pregunta si existe brand
   car.delete("brand"); // borra el valor
+  
+  // Set o Conjunto
+  
+  var dogs = new Set();
+  
+  dogs.add("Chihuahua"); // agrega
+  dogs.add("Golden Retriever"); // agrega
+  dogs.add("Pastor Alemán"); // agrega
+  
+  dogs.delete("Chihuahua"); // borra el valor
+  console.log(dogs); // retorna los valores
+  dogs.size // retorma la cantidad de valores en forma de numero
+  
+  // Ciclo for of
+  
+  var frameworks = new Array("Rails", "Node.js", "Laravel");
+  
+  for(let framework of frameworks){
+    console.log(framework); //  retorma los valosres
+  }
+  
+  // Ciclo while
+  
+ var age = 1 
+  
+  
+  
+  
+  
+
  
