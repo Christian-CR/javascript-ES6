@@ -52,12 +52,17 @@ console.log('you say ${yousay}, I say ${isay}');
   var frameworks = new Array("Rails", "Node.js", "Laravel");
   
   for(let framework of frameworks){
-    console.log(framework); //  retorma los valosres
+    console.log(framework); //  retorma los valores
   }
   
   // Ciclo while
   
- var age = 1 
+ var age = 0;
+ 
+  while(age <= 20){
+    console.log("he cumplido estos "+age+"años");
+     age++;
+  }
   
   
   
