@@ -64,6 +64,15 @@ console.log('you say ${yousay}, I say ${isay}');
      age++;
   }
   
+  //Ciclo do while
+  
+  var mascotas = 0;
+  
+  do{
+    console.log("hay unas "+mascotas+" en la tienda de mascotas");
+    mascotas++;
+  }while(mascotas < 10);
+  
   
   
   
