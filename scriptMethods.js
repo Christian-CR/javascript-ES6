@@ -41,6 +41,7 @@ console.log('you say ${yousay}, I say ${isay}');
   dogs.add("Chihuahua"); // agrega
   dogs.add("Golden Retriever"); // agrega
   dogs.add("Pastor Alemán"); // agrega
+  dogs.add(lenguajes) // agrega el arreglo
   
   dogs.delete("Chihuahua"); // borra el valor
   console.log(dogs); // retorna los valores
