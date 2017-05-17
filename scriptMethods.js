@@ -73,6 +73,14 @@ console.log('you say ${yousay}, I say ${isay}');
     mascotas++;
   }while(mascotas < 10);
   
+  // Parámetros Spread
+  
+  function device (type, name, brand){
+    console.log(`el ${type} ${name} es de la marca ${brand}`);
+  }
+  
+  var cellphone = new Array("celular", "X2", "Motorola");
+  device(...cellphone);
   
   
   
