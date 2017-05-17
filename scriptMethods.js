@@ -75,11 +75,11 @@ console.log('you say ${yousay}, I say ${isay}');
   
   // Parámetros Spread
   
-  function device (type, name, brand){
-    console.log(`el ${type} ${name} es de la marca ${brand}`);
+  function device (type, name, brand, color){
+    console.log(`el ${type} ${name} es de la marca ${brand} y es de color ${color}`);
   }
   
-  var cellphone = new Array("celular", "X2", "Motorola");
+  var cellphone = new Array("celular", "X2", "Motorola", "gris oscuro");
   device(...cellphone);
   
   
