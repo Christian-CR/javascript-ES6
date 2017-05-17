@@ -15,5 +15,12 @@ console.log('you say ${yousay}, I say ${isay}');
 - includes
 
 */
-
-}
+  
+  // Otras formas de expresar un arreglo
+  
+  var lenguajes = new Array("ruby", "javascript", "go", "php");
+  var lenguajes2 = ["ruby", "javascript", "go", "php"];
+  
+  
+  
+ 
