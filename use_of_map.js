@@ -9,3 +9,10 @@ var animals = [
   { name: 'Ursula', species: 'cat' },
   { name: 'Jummy', species: 'fish' }
 ]
+
+var names = animals.map(function(){
+  return animal.name;
+});
+
+// retorna esto
+// [ 'Fluffykins', 'Caro', 'Hamilton', 'Harold', 'Ursula', 'Jummy' ]
