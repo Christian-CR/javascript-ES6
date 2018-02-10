@@ -61,4 +61,32 @@ const totalDamageOnDorkman = dragonEvents
   console.log( 'totalDamageOnDorkman', totalDamageOnDorkman );
 
 
+// **********************************************
+// ************ LO MISMO PERO EN LOS CASOSO EN LOS QUE SOLAMENTE HAY UN PARAMETRO, 
+// ************ SE QUITAN LOS PARENTESIS DOBLES
+// **********************************************
+
+const totalDamageOnDorkman = dragonEvents
+  .filter(event => event.type === 'atack')
+  .filter(event => event.target === 'player-dorkman')
+  .map(event => event.value)
+  .reduce((prev, value) => (prev || 0) + value)
+
+  console.log( 'totalDamageOnDorkman', totalDamageOnDorkman );
+
+
+// **********************************************
+// ************ SACANDO EL RESULTADO EN UNA CONTANTE APARTE
+// ************ Y LLAMANDOLA CON CALLBACK
+// **********************************************
+
+const reduceTotal = (prev, x) => (prev || 0) + x
+const totalDamageOnDorkman = dragonEvents
+  .filter(e => e.type === 'atack')
+  .filter(e => e.target === 'player-dorkman')
+  .map(e => e.value)
+  .reduce((prev, value) => (prev || 0) + value)
+
+  console.log( 'totalDamageOnDorkman', totalDamageOnDorkman );
+
 // tomado del video: arrow function in javascript
