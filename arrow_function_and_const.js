@@ -28,7 +28,7 @@ const totalDamageOnDorkman = dragonEvents
 console.log( 'totalDamageOnDorkman', totalDamageOnDorkman );
 
 // **********************************************
-// ************  ESCRITO CON ARROW FUNCTIONS
+// ************ LO MISMO ESCRITO CON ARROW FUNCTIONS
 // **********************************************
 
 .filter(function(event){
@@ -48,6 +48,17 @@ console.log( 'totalDamageOnDorkman', totalDamageOnDorkman );
 })
 // retorna la suma de los valores anteriores, osea 12 y 12 = 24
 
+// **********************************************
+// ************ LO MISMO ESCRITO DE FORMA IMPLICITA
+// **********************************************
+
+const totalDamageOnDorkman = dragonEvents
+  .filter((event) => event.type === 'atack')
+  .filter((event) => event.target === 'player-dorkman')
+  .map((event) => event.value)
+  .reduce((prev, value) => (prev || 0) + value)
+
+  console.log( 'totalDamageOnDorkman', totalDamageOnDorkman );
 
 
 // tomado del video: arrow function in javascript
