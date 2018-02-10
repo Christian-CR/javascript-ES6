@@ -20,8 +20,8 @@ const totalDamageOnDorkman = dragonEvents
   return.event.value
 })
 // retorna solo los valores del target player-dorkman que serian 12 y 12
-.reduce(function(){
-  return (prev || + value)
+.reduce(function(prev, value){
+  return (prev || 0) + value
 })
 // retorna la suma de los valores anteriores, osea 12 y 12 = 24
 
