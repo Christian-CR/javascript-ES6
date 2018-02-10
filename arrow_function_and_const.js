@@ -27,4 +27,27 @@ const totalDamageOnDorkman = dragonEvents
 
 console.log( 'totalDamageOnDorkman', totalDamageOnDorkman );
 
-// tomado del video: arroe function in javascript - what, why and how
+// **********************************************
+// ************  ESCRITO CON ARROW FUNCTIONS
+// **********************************************
+
+.filter(function(event){
+  return event.type === 'attack' 
+})
+// retorna todos los type que tengan el string attack
+.filter((event) => {
+  return event.target === 'player-dorkman'
+})
+// retorna todos los target que tienen el valor player-dorkman
+.map((event) => {
+  return.event.value
+})
+// retorna solo los valores del target player-dorkman que serian 12 y 12
+.reduce((prev, value) => {
+  return (prev || 0) + value
+})
+// retorna la suma de los valores anteriores, osea 12 y 12 = 24
+
+
+
+// tomado del video: arrow function in javascript
