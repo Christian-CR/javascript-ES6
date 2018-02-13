@@ -47,3 +47,11 @@ output [
   'Nikita Smith\tpot\t20\t3'
 ]
 */
+
+
+// para crear una lista mas manejable como un arreglo de arreglos
+  .trim()
+  .split('\n')
+console.log('output' output)
+
+
