@@ -83,5 +83,48 @@ output [
 
 console.log('output', JSON.stringify(output, null, 2))
 
+// retorna esto:
+/*
+ [ 'mark johansson', 'waffle iron', '80', '2'],
+ [ 'mark johansson', 'blender', '200', '1'],
+ [ 'mark johansson', 'knife', '10', '4'],
 
+output 
+{
+ "mark johansson": [
+   {
+    "name": "waffle iron",
+    "price": "80",
+    "quantity": "1"
+    },
+     {
+    "name": "blender",
+    "price": "200",
+    "quantity": "1"
+    },
+    {
+    "name": "knife",
+    "price": "10",
+    "quantity": "4"
+    }
+  ],
+ "Nikita Smith": [
+   {
+    "name": "waffle iron",
+    "price": "80",
+    "quantity": "1"
+    },
+     {
+    "name": "knife",
+    "price": "80",
+    "quantity": "2"
+    },
+    {
+    "name": "pot",
+    "price": "20",
+    "quantity": "3"
+    }
+  ]
+}
+*/
 
