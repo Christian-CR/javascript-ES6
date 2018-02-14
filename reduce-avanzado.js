@@ -52,6 +52,22 @@ output [
 // para crear una lista mas manejable como un arreglo de arreglos
   .trim()
   .split('\n')
+  .map(line => line.split('\t'))
 console.log('output' output)
+
+// retorna esto:
+/*
+output [
+ [ 'mark johansson', 'waffle iron', '80', '2'],
+ [ 'mark johansson', 'blender', '200', '1'],
+ [ 'mark johansson', 'knife', '10', '4'],
+ [ 'Nikita Smith', 'waffle iron', '80', '1'],
+ [ 'Nikita Smith', 'knife', '10', 't2'],
+ [ 'Nikita Smith', 'pot', '20', '3']
+]
+*/
+
+
+
 
 
