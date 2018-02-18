@@ -85,9 +85,6 @@ console.log('output', JSON.stringify(output, null, 2))
 
 // retorna esto:
 /*
- [ 'mark johansson', 'waffle iron', '80', '2'],
- [ 'mark johansson', 'blender', '200', '1'],
- [ 'mark johansson', 'knife', '10', '4'],
 
 output 
 {
