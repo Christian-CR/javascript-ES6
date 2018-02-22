@@ -28,4 +28,15 @@ dog.talk()
 Object.setPrototypeOf(prarieDog, dog)
 prarieDog.howl()
 
+/*
+retorna:
+
+meow
+woof
+WOOF
+
+*/
+
+
+
 // tomado del video:  Prototype basics - Object Creation in JavaScript P3
