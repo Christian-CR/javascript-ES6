@@ -25,3 +25,19 @@ button.addEventListener(
   'click',
   dog.talk.bind(dog)
 )
+
+
+// OTRO EJEMPLO:
+
+function talk(){
+  console.log(this.sound)
+}
+
+let boromir = {
+    sound: 'One does not simply walk into mordor!'
+  }
+
+let talkBoundToBoromir = talk.bind(boromir)
+talkBoundToBoromir();
+
+
