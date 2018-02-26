@@ -72,3 +72,4 @@ boromir.speak = talk.bind(boromir)
 let blabber = boromir.speak
 blabber()
 
+// del video de fun fun function
