@@ -41,3 +41,17 @@ let talkBoundToBoromir = talk.bind(boromir)
 talkBoundToBoromir();
 
 
+// OTRO EJEMPLO ( otra forma de hacer los mismo ):
+
+let talk = function(){
+    console.log(this.sound)
+  }
+
+let boromir = {
+  speak: talk, 
+  sound: 'One does not simply walk into mordor!'
+
+}
+
+boromir.speak();
+
